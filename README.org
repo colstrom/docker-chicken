@@ -1,0 +1,42 @@
+#+TITLE: Chicken Scheme on Docker
+#+LATEX: \pagebreak
+
+* Overview
+
+Chicken Scheme on Alpine in Docker
+
+* Usage
+
+#+BEGIN_SRC shell
+  docker run --rm -it lang/chicken
+#+END_SRC
+
+The default entrypoint is ~csi~ (the Chicken Scheme REPL).
+
+* Tags
+
+|------------+------------------------------------------------|
+| Tag        | Description                                    |
+|------------+------------------------------------------------|
+| ~latest~   | Tracks the ~develop~ branch of this repository |
+| ~release~  | Tracks the ~master~ branch of this repository  |
+| ~with-git~ | Same as ~release~ but includes ~git~           |
+|------------+------------------------------------------------|
+
+* Repsitory Layout
+
+|-------------------+------------------------------------------------------------|
+| Path              | Description                                                |
+|-------------------+------------------------------------------------------------|
+| ci/images/chicken | Image manifests and assets for ~latest~ and ~release~ tags |
+| ci/images/eggs/*  | Image manifests and assets for various eggs                |
+|-------------------+------------------------------------------------------------|
+
+* License
+
+[[https://tldrlegal.com/license/mit-license][MIT License]]
+
+ See ~LICENSE.txt~ for the full text.
+
+* Contributors
+- [[https://colstrom.github.io/][Chris Olstrom]] | [[mailto:chris@olstrom.com][e-mail]] | [[https://twitter.com/ChrisOlstrom][Twitter]]
